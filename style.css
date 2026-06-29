@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f8fc;
+    color: #222;
+    transition: 0.3s ease;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8%;
+    background: #0b3d91;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ffd54f;
+}
+
+/* ================= STATUS BAR ================= */
+.status-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    background: #072a66;
+    color: white;
+    font-size: 13px;
+    position: sticky;
+    top: 65px;
+    z-index: 999;
+}
+
+.status-bar div {
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 18px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+    padding: 40px;
+    background: linear-gradient(135deg, #0b3d91, #1976d2);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 35px;
+    background: #ffd54f;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #0b3d91;
+}
+
+/* ================= CARDS ================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.card i {
+    font-size: 26px;
+    color: #0b3d91;
+    margin-bottom: 8px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* ================= CAMERA ================= */
+#camera video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 14px;
+    display: block;
+    margin: auto;
+    border: 3px solid #0b3d91;
+}
+
+/* ================= BUTTON ================= */
+#cameraBtn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #0b3d91;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b3d91;
+    color: white;
+}
+
+/* ================= SOS MODE (IMPORTANT) ================= */
+body.sos {
+    background: #ff4d4d !important;
+    animation: flash 0.8s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.85; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoGuide AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">EchoGuide AI</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#camera">Camera</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>Helping the Visually Impaired Navigate the World</h1>
+
+            <p>
+                EchoGuide AI uses Artificial Intelligence,
+                Computer Vision and Voice Assistance to
+                identify surroundings and guide users safely.
+            </p>
+
+            <button id="startBtn">
+                <i class="fa-solid fa-play"></i>
+                Start Guide
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+
+        <h2>Core Features</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Object Detection</h3>
+                <p>Detects nearby objects using AI.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-volume-high"></i>
+                <h3>Voice Guidance</h3>
+                <p>Reads surroundings aloud.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Navigation</h3>
+                <p>Guides users through accessible routes.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>Emergency SOS</h3>
+                <p>Quick emergency assistance.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Camera Section -->
+    <section id="camera">
+
+        <h2>Live Camera</h2>
+
+        <video id="video" autoplay playsinline></video>
+
+        <canvas id="canvas"></canvas>
+
+        <br><br>
+
+        <button id="cameraBtn">
+            Start Camera
+        </button>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About EchoGuide AI</h2>
+
+        <p>
+            EchoGuide AI is an AI-powered accessibility assistant
+            designed to help visually impaired people understand
+            their surroundings using object detection,
+            voice narration and emergency assistance.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 EchoGuide AI | Built for Sprintathon
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+   
+</body>
+</html>
